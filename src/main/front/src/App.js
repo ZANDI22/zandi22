@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
       axios({
           method: "get",
-          url: 'http://localhost:8080/api/hello',
+          url: '/api/hello',
           header: {withCredentials: true}
       }).then(response => setHello(response.data))
           .catch(error => console.log(error));
